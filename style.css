@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shadows+Into+Light&display=swap');
+
+*, body {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+}
+
+.veggie-img {
+position: fixed;
+width: 100%;
+height: auto;
+margin: 0;
+padding: 0;
+z-index: -1;
+overflow: hidden;
+animation: fadeIn ease 2s; 
+animation-iteration-count: 1; 
+animation-fill-mode: forwards;
+}
+
+.right-panel {
+    max-width: 50%;
+    height: 100vh;
+    float: right;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.884);
+    z-index: 5;
+    animation: slideInLeft ease 1.2s; 
+    animation-iteration-count: 1;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    transform: rotate(40deg);
+    margin-top: 100px;
+    animation: logoAnimation ease 2s;
+    animation-iteration-count: 1;
+}
+
+#borough {
+    max-width: 100%;
+    margin-top: 10px;
+    z-index: 5;
+    font-family: 'Amatic SC', cursive;
+    animation: slideInDown ease 2s;
+    animation-iteration-count: 1;
+}
+
+#location {
+    max-width: 100%;
+    margin-top: 15px;
+    z-index: 5;
+    font-family: 'Amatic SC', cursive;
+    font-size: 26px;
+    animation: slideInDown ease 2s;
+    animation-iteration-count: 1;
+}
+
+.info {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    padding: 10px, 35px;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    max-width: 80px;
+    margin-top: 20px;
+    animation: slideInUp ease 2s;
+    animation-iteration-count: 1;
+}
+
+.info:hover {
+    transform: translate(1px, -3px);
+    cursor: pointer;
+    background-color: rgb(196, 34, 96);
+    border-color: 3px solid white;
+    box-shadow: -1px 3px #222;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 100; }
+}
+
+@keyframes slideInLeft {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes slideInUp {
+    0% {transform: translateY(500%);}
+    100% {transform: translateY(0);}
+}
+
+@keyframes logoAnimation {
+    0% {transform: translateY(-300%) rotate(0);}
+    100% {transform: translateY(0) rotate(40deg);}
+}
+
+@keyframes slideInDown {
+    0% {transform: translateY(-300%);}
+    100% {transform: translateY(0);}
+}
