@@ -1,34 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Shadows+Into+Light&display=swap');
 
-*, body {
+* {
     box-sizing: border-box;
-    width: 100%;
     margin: 0;
 }
 
-.veggie-img {
-position: fixed;
-width: 100%;
-height: auto;
-margin: 0;
-padding: 0;
-z-index: -1;
-overflow: hidden;
-animation: fadeIn ease 2s; 
-animation-iteration-count: 1; 
-animation-fill-mode: forwards;
+.wrapper {
+    height: 100vh;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/53938fb9e4b045b0b04475fc/1568178360176-X4SPLN4WJQCQR6S6GMEQ/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/yoshida_london_uk_borough_market_20181113_09.jpg?format=2500w');
+    width: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .right-panel {
-    max-width: 50%;
+    width: 50%;
     height: 100vh;
+    position: relative;
     float: right;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.884);
-    z-index: 5;
     animation: slideInLeft ease 1.2s; 
     animation-iteration-count: 1;
 }
+
 
 .logo {
     width: 200px;
