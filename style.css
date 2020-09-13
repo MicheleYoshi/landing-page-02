@@ -26,11 +26,19 @@
     animation-iteration-count: 1;
 }
 
+.right-container {
+    position: relative;
+    margin: auto;
+    max-width: 50%;
+    height: auto;
+    text-align: center;
+}
 
 .logo {
     display: block;
+    position: relative;
     margin: auto;
-    width: auto;
+    max-width: 100%;
     height: auto;
     overflow: hidden;
     transform: rotate(40deg);
