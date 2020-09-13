@@ -7,6 +7,7 @@
 
 .wrapper {
     height: 100vh;
+    min-height: 200px;
     background-image: url('https://images.squarespace-cdn.com/content/v1/53938fb9e4b045b0b04475fc/1568178360176-X4SPLN4WJQCQR6S6GMEQ/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/yoshida_london_uk_borough_market_20181113_09.jpg?format=2500w');
     width: 100%;
     background-size: cover;
@@ -14,23 +15,25 @@
 }
 
 .right-panel {
+    left: 50%;
     width: 50%;
     height: 100vh;
-    position: relative;
+    position: fixed;
     float: right;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.884);
-    animation: slideInLeft ease 1.2s; 
+    animation: slideInLeft ease 1.2s;
     animation-iteration-count: 1;
 }
 
 
 .logo {
-    width: 200px;
-    height: 200px;
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
     overflow: hidden;
     transform: rotate(40deg);
-    margin-top: 100px;
     animation: logoAnimation ease 2s;
     animation-iteration-count: 1;
 }
@@ -39,6 +42,7 @@
     max-width: 100%;
     margin-top: 10px;
     z-index: 5;
+    font-size: 5vw;
     font-family: 'Amatic SC', cursive;
     animation: slideInDown ease 2s;
     animation-iteration-count: 1;
@@ -49,14 +53,14 @@
     margin-top: 15px;
     z-index: 5;
     font-family: 'Amatic SC', cursive;
-    font-size: 26px;
+    font-size: 3vw;
     animation: slideInDown ease 2s;
     animation-iteration-count: 1;
 }
 
 .info {
     font-family: 'Amatic SC', cursive;
-    font-size: 20px;
+    font-size: 2vw;
     padding: 10px, 35px;
     background-color: black;
     border-radius: 15px;
@@ -76,26 +80,51 @@
 }
 
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 100; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
 }
 
 @keyframes slideInLeft {
-    0% {transform: translateX(100%);}
-    100% {transform: translateX(0);}
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 @keyframes slideInUp {
-    0% {transform: translateY(500%);}
-    100% {transform: translateY(0);}
+    0% {
+        transform: translateY(500%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @keyframes logoAnimation {
-    0% {transform: translateY(-300%) rotate(0);}
-    100% {transform: translateY(0) rotate(40deg);}
+    0% {
+        transform: translateY(-300%) rotate(0);
+    }
+
+    100% {
+        transform: translateY(0) rotate(40deg);
+    }
 }
 
 @keyframes slideInDown {
-    0% {transform: translateY(-300%);}
-    100% {transform: translateY(0);}
+    0% {
+        transform: translateY(-300%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
